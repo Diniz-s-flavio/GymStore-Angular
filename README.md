@@ -1,27 +1,11 @@
 # GymStoreAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8. And it's a project aboute a prototype website selling gym equipment.
 
-## Development server
+# Starting Objectives
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Initially this project will have 3 main home pages, a home page that shows the available products, an order page that brings us a form to register an order, and a page dedicated to the product, which shows the selected product in detail.
 
-## Code scaffolding
+# Project Developer
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Hello, I'm Flávio Diniz de Sousa and I will initially develop this project alone for my college in the Web development discipline. And this is the first time I work with Angular, so I hope to learn as much as possible, even though my studies are focused on the back-end.
