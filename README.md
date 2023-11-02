@@ -1,6 +1,6 @@
 # GymStoreAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8. And it's a project aboute a prototype website selling gym equipment.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli). And it's a project aboute a prototype website selling gym equipment.
 
 # Starting Objectives
 
