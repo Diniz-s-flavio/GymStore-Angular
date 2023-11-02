@@ -1,0 +1,18 @@
+<mat-toolbar class="menu-bar">
+    <mat-toolbar-row>
+        <button mat-icon-button class="menu-icon" (click)="toggleMenuStats()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div class="full-logo">
+            <img src="assets/img/darckViper_32p.png" class="img-viper"/>
+            <a routerLink="/"> GymStore </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="mobile-menu">
+    <ul>
+        <li class="nav-item"><a routerLink="/produtos" class="nav-link"><p>Loja</p></a></li>
+        <li class="nav-item"><a routerLink="/" class="nav-link">Carrinho</a></li>
+    </ul>
+</div>
