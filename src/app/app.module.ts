@@ -5,22 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MenuBarComponent } from './menu-bar/menu-bar.component';
-import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProfuctPageComponent } from './profuct-page/profuct-page.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProductsComponent } from './products/products.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     NotFoundComponent,
-    ProfuctPageComponent,
+    ProductsComponent,
+    SingleProductComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MenuBarComponent,
+      MatToolbarModule,
+      MatButtonModule,
+      MatIconModule,
 
   ],
   providers: [],

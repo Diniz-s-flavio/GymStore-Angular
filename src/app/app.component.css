@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root{
+    --font-primary: 'Inter', serif;
+    --font-secundary: "Josefin Slab", serif ;
+    --font-action: 'Mulish', serif;
+}
+
+
+.menu-bar {
+    background-color: #07d707;
+}
+
+mat-toolbar-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+.full-logo {
+  margin-right: 20px;
+}
+
+.full-logo a {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: black;
+}
+
+.mobile-menu {
+    display: none;
+    margin-top: 0;
+}
+
+.menu-open{
+    display: flex;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #07d707;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+}
+
+.mobile-menu .nav-item {
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: black;
+}
+
+.mobile-menu .nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+} 
+
+.mobile-menu .nav-link:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
