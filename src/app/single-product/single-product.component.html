@@ -1,1 +1,56 @@
-<p>single-product works!</p>
+<div class="product-main">
+    <div class="product-img">
+       <img class="product-img-field" src={{product.image}} alt={{product.name}}> 
+    </div>
+    <div class="product-about">
+        <div class="product-about-name">
+            <h2>{{product.name}}</h2>
+            
+        </div>
+        <div class="product-about-price">
+            <hr>
+            <li>A vista no boleto ou Pix por:</li>
+            <p>R$ {{brlConverter(product.price)}}</p>
+            <li>No cartão em {{installmentsAmount}} vezes de:</li>
+            <p>R$ {{brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}} <i class="offFocus">(total: {{brlConverter(calcTotalOrderItemValue(product.price, orderItemsAmount))}})</i></p>
+        </div>
+        <div class="product-about-desc">
+            <hr>
+            <h3>Especificações</h3>
+            <ul>
+                <li><strong>Marca: </strong>{{product.brand}}</li>
+                <li><strong>Peso total: </strong>{{product.weight}}kg</li>
+                <li><strong>Itens no pacote: </strong>{{product.itemsAmount}}</li>
+            </ul>
+            <h3>Sobre o Produto</h3>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+    <div class="buy-product">
+            <div class="buy-product-top-info">
+                <h2>R$ {{brlConverter(product.price)}} <i class="offFocus">a vista no pix</i></h2>
+                <p>Ou em ate {{product.maxInstallments}}x de: R$ {{brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}}/mês</p>
+                <h3 class="stock-status">{{product.stockStatus? "Em Estoque":"Esgotado"}}</h3>
+            </div>
+
+            <div class="buy-product-amout-selector">
+                <div>
+                    <strong>Quantidade </strong>
+                    <select name="buyingProductAmount" id="buyingProductAmount">
+                            <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <button class="buyButton" (click)="buyProduct()">Comprar</button>
+            </div>
+
+            <div class="buy-product-botton-info">
+                <p><i class="offFocus">Enviado por:</i> gymstore.com.br</p>
+                <p><i class="offFocus">Vendido por:</i> gymstore.com.br</p>
+            </div>
+    </div>
+</div>

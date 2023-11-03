@@ -1,0 +1,119 @@
+.product-main{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: azure;
+    margin-left: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 90%;
+}
+
+.product-main div{
+    width: 30%;
+
+}
+
+.product-main .product-about{
+    width: 34%;
+}
+
+.product-main .product-img{
+    width: 32%;
+}
+
+.product-img img{
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    margin-top: 30%;
+}
+
+.product-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.product-about div{
+    width: 100%;
+}
+.product-about div p{
+    margin: 0px 10px ;
+}
+
+.product-about-name{
+    height: 10%;
+}
+.product-about-price{
+    height: 15%;
+}
+
+.product-about-price p{
+    padding-left: 50px;
+}
+.product-about-desc{
+    height: 75%;
+}
+
+.product-about-desc ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.buy-product{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.buy-product div{
+    width: 100%;
+}
+.offFocus{
+    color: grey;
+}
+
+.stockPositive{
+    color: green;
+}
+
+.stockNegative{
+    color: red;
+}
+
+.buyButton{
+    background-color: #07d707;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom: #026b02 solid 3px;
+    width: 50%;
+}
+
+.buyButton:hover{
+    border-bottom: #026b02 solid 1px;
+}
+
+.buy-product-amout-selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.buy-product-botton-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 4rem;
+}
