@@ -1,7 +1,6 @@
-.store-main{
+#store-main{
     width: 90%;
-    margin-left: 5%;
-    height: 100%;
+    margin-left: 2%;
     color: black;
     display: flex;
     flex-direction: column;
@@ -10,7 +9,7 @@
 
 }
 
-.store-main .store-row {
+#store-main .store-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

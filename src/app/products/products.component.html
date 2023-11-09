@@ -1,92 +1,235 @@
-<div class="store-main">
-    <div class="store-row">
+<div id="store-main">
+     <div class="store-row">
         <mat-card class="product-card">
             <div class="product-card-div">
                 <a routerLink="/products/single-product">
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">    
+                    <img mat-card-image src={{product1.image}} >    
                 </a>
                 <a routerLink="/products/single-product" class="products-to-single-link">
                     <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>Nome Produto</mat-card-title>
-                    <mat-card-subtitle>Valor</mat-card-subtitle>
+                    <mat-card-title>{{product1.name}}</mat-card-title>
+                    <mat-card-subtitle>{{product1.brlConverter()}}</mat-card-subtitle>
                     </mat-card-header>
                 </a>
                 <mat-card-content>
                   <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
+                    {{product1.description}}
                   </p>
                 </mat-card-content>
             </div>
-          </mat-card>
+        </mat-card>
 
-          <mat-card class="product-card">
-            <div class="product-card-div">
-                <a routerLink="/products/single-product">
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">    
-                </a>
-                <a routerLink="/products/single-product" class="products-to-single-link">
-                    <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>Nome Produto</mat-card-title>
-                    <mat-card-subtitle>Valor</mat-card-subtitle>
-                    </mat-card-header>
-                </a>
-                <mat-card-content>
-                  <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                  </p>
-                </mat-card-content>
-            </div>
-          </mat-card>
+        <mat-card class="product-card">
+          <div class="product-card-div">
+              <a routerLink="/products/single-product">
+                  <img mat-card-image src={{product2.image}} >    
+              </a>
+              <a routerLink="/products/single-product" class="products-to-single-link">
+                  <mat-card-header>
+                  <mat-card-title>{{product2.name}}</mat-card-title>
+                  <mat-card-subtitle>{{product2.brlConverter()}}</mat-card-subtitle>
+                  </mat-card-header>
+              </a>
+              <mat-card-content>
+                <p>
+                  {{product2.description}}
+                </p>
+              </mat-card-content>
+          </div>
+      </mat-card>
 
-          <mat-card class="product-card">
-            <div class="product-card-div">
-                <a routerLink="/products/single-product">
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">    
-                </a>
-                <a routerLink="/products/single-product" class="products-to-single-link">
-                    <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>Nome Produto</mat-card-title>
-                    <mat-card-subtitle>Valor</mat-card-subtitle>
-                    </mat-card-header>
-                </a>
-                <mat-card-content>
-                  <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                  </p>
-                </mat-card-content>
-            </div>
-          </mat-card>
+      <mat-card class="product-card">
+        <div class="product-card-div">
+            <a routerLink="/products/single-product">
+                <img mat-card-image src={{product3.image}} >    
+            </a>
+            <a routerLink="/products/single-product" class="products-to-single-link">
+                <mat-card-header>
+                <mat-card-title>{{product3.name}}</mat-card-title>
+                <mat-card-subtitle>{{product3.brlConverter()}}</mat-card-subtitle>
+                </mat-card-header>
+            </a>
+            <mat-card-content>
+              <p>
+                {{product3.description}}
+              </p>
+            </mat-card-content>
+        </div>
+    </mat-card>
 
-          <mat-card class="product-card">
-            <div class="product-card-div">
-                <a routerLink="/products/single-product">
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">    
-                </a>
-                <a routerLink="/products/single-product" class="products-to-single-link">
-                    <mat-card-header>
-                    <div mat-card-avatar class="example-header-image"></div>
-                    <mat-card-title>Nome Produto</mat-card-title>
-                    <mat-card-subtitle>Valor</mat-card-subtitle>
-                    </mat-card-header>
-                </a>
-                <mat-card-content>
-                  <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                  </p>
-                </mat-card-content>
-            </div>
-          </mat-card>
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product4.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product4.name}}</mat-card-title>
+              <mat-card-subtitle>{{product4.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product4.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
 
-          
+  <div class="store-row">
+    <mat-card class="product-card">
+        <div class="product-card-div">
+            <a routerLink="/products/single-product">
+                <img mat-card-image src={{product5.image}} >    
+            </a>
+            <a routerLink="/products/single-product" class="products-to-single-link">
+                <mat-card-header>
+                <mat-card-title>{{product5.name}}</mat-card-title>
+                <mat-card-subtitle>{{product5.brlConverter()}}</mat-card-subtitle>
+                </mat-card-header>
+            </a>
+            <mat-card-content>
+              <p>
+                {{product5.description}}
+              </p>
+            </mat-card-content>
+        </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product6.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product6.name}}</mat-card-title>
+              <mat-card-subtitle>{{product6.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product6.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product7.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product7.name}}</mat-card-title>
+              <mat-card-subtitle>{{product7.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product7.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product8.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product8.name}}</mat-card-title>
+              <mat-card-subtitle>{{product8.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product8.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="store-row">
+    <mat-card class="product-card">
+        <div class="product-card-div">
+            <a routerLink="/products/single-product">
+                <img mat-card-image src={{product9.image}} >    
+            </a>
+            <a routerLink="/products/single-product" class="products-to-single-link">
+                <mat-card-header>
+                <mat-card-title>{{product9.name}}</mat-card-title>
+                <mat-card-subtitle>{{product9.brlConverter()}}</mat-card-subtitle>
+                </mat-card-header>
+            </a>
+            <mat-card-content>
+              <p>
+                {{product9.description}}
+              </p>
+            </mat-card-content>
+        </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product10.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product10.name}}</mat-card-title>
+              <mat-card-subtitle>{{product10.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product10.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+      <div class="product-card-div">
+          <a routerLink="/products/single-product">
+              <img mat-card-image src={{product11.image}} >    
+          </a>
+          <a routerLink="/products/single-product" class="products-to-single-link">
+              <mat-card-header>
+              <mat-card-title>{{product11.name}}</mat-card-title>
+              <mat-card-subtitle>{{product11.brlConverter()}}</mat-card-subtitle>
+              </mat-card-header>
+          </a>
+          <mat-card-content>
+            <p>
+              {{product11.description}}
+            </p>
+          </mat-card-content>
+      </div>
+    </mat-card>
+
+    <mat-card class="product-card">
+    <div class="product-card-div">
+        <a routerLink="/products/single-product">
+            <img mat-card-image src={{product12.image}} >    
+        </a>
+        <a routerLink="/products/single-product" class="products-to-single-link">
+            <mat-card-header>
+            <mat-card-title>{{product12.name}}</mat-card-title>
+            <mat-card-subtitle>{{product12.brlConverter()}}</mat-card-subtitle>
+            </mat-card-header>
+        </a>
+        <mat-card-content>
+          <p>
+            {{product12.description}}
+          </p>
+        </mat-card-content>
+    </div>
+    </mat-card>
+  </div>
 </div>
