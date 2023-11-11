@@ -17,7 +17,8 @@ export class ProductsComponent {
       16,
       "Fortex",
       7,
-      true);
+      true,
+      0);
 
     product2 = new Product(
       'Esteira Elétrica',
@@ -28,7 +29,8 @@ export class ProductsComponent {
       25,
       'Marca A',
       12,
-      true
+      true,
+      0
     );
     
     product3 = new Product(
@@ -40,7 +42,8 @@ export class ProductsComponent {
       20,
       'Marca B',
       10,
-      true
+      true,
+      0
     );
     
     product4 = new Product(
@@ -52,7 +55,8 @@ export class ProductsComponent {
       10,
       'Marca C',
       8,
-      true
+      true,
+      0
     );
     
     product5 = new Product(
@@ -64,7 +68,8 @@ export class ProductsComponent {
       50,
       'Marca D',
       0,
-      true
+      true,
+      0
     );
     
     product6 = new Product(
@@ -76,7 +81,8 @@ export class ProductsComponent {
       100,
       'Marca E',
       0,
-      true
+      true,
+      0
     );
     
     product7 = new Product(
@@ -88,7 +94,8 @@ export class ProductsComponent {
       30,
       'Marca F',
       0,
-      true
+      true,
+      0
     );
     
     product8 = new Product(
@@ -100,7 +107,8 @@ export class ProductsComponent {
       40,
       'Marca G',
       0,
-      true
+      true,
+      0
     );
     
     product9 = new Product(
@@ -112,7 +120,8 @@ export class ProductsComponent {
       25,
       'Marca H',
       0,
-      true
+      true,
+      0
     );
     
     product10 = new Product(
@@ -124,7 +133,8 @@ export class ProductsComponent {
       100,
       'Marca I',
       0,
-      true
+      true,
+      0
     );
     
     product11 = new Product(
@@ -136,7 +146,8 @@ export class ProductsComponent {
       50,
       'Marca J',
       0,
-      true
+      true,
+      0
     );
     
     product12 = new Product(
@@ -148,6 +159,7 @@ export class ProductsComponent {
       30,
       'Marca K',
       0,
-      true
+      true,
+      0
     );
 }

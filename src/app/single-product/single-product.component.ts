@@ -16,21 +16,13 @@ export class SingleProductComponent implements OnInit{
   "Haltere",
    150.10, 
    "Halteres são um tipo de equipamento que se adapta a vários tipos de treino. No momento em que cada carga atende a uma necessidade é fundamental possuir um kit de alteres com pesos entre 1 a até 10 quilos.",
-   "../../assets/img/halteres1.jpg",
+   "../../assets/img/produtos/halteres1.jpg",
    13.00,
    16,
    "Fortex",
    7,
-   true);
-
-   brlConverter(itemPrice:number): any {
-    let brlItemPrice = itemPrice.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
-    let splitedBRLItemPrice = brlItemPrice.split(",");
-    if (splitedBRLItemPrice[1].length != 2) {
-      return brlItemPrice+"0";
-    }
-    return  brlItemPrice;
-   }
+   true,
+   0.00);
 
    installmentsAmount = 7;
    orderItemsAmount = 1;
@@ -49,7 +41,7 @@ export class SingleProductComponent implements OnInit{
     const selectValue = document.getElementById('buyingProductAmount') as HTMLSelectElement
     this.orderItemsAmount = parseInt(selectValue.value);
     let totalOrderItemValue = this.product.price* this.orderItemsAmount;
-    alert("Comprando "+ this.product.name +": "+this.orderItemsAmount+" por R$" +this.brlConverter(totalOrderItemValue))
+    alert("Comprando "+ this.product.name +": "+this.orderItemsAmount+" por R$" + this.product.brlConverter(totalOrderItemValue))
    }
   
    toggleStockStats(): void{

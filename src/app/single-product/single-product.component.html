@@ -10,9 +10,9 @@
         <div class="product-about-price">
             <hr>
             <li>A vista no boleto ou Pix por:</li>
-            <p>R$ {{brlConverter(product.price)}}</p>
+            <p>R$ {{product.brlConverter(product.price)}}</p>
             <li>No cartão em {{installmentsAmount}} vezes de:</li>
-            <p>R$ {{brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}} <i class="offFocus">(total: {{brlConverter(calcTotalOrderItemValue(product.price, orderItemsAmount))}})</i></p>
+            <p>R$ {{product.brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}} <i class="offFocus">(total: {{product.brlConverter(calcTotalOrderItemValue(product.price, orderItemsAmount))}})</i></p>
         </div>
         <div class="product-about-desc">
             <hr>
@@ -28,24 +28,30 @@
     </div>
     <div class="buy-product">
             <div class="buy-product-top-info">
-                <h2>R$ {{brlConverter(product.price)}} <i class="offFocus">a vista no pix</i></h2>
-                <p>Ou em ate {{product.maxInstallments}}x de: R$ {{brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}}/mês</p>
+                <h2>R$ {{product.brlConverter(product.price)}} <i class="offFocus">a vista no pix</i></h2>
+                <p>Ou em ate {{product.maxInstallments}}x de: R$ {{product.brlConverter(calcInstallmentsValue(product.price,installmentsAmount, orderItemsAmount))}}/mês</p>
                 <h3 class="stock-status">{{product.stockStatus? "Em Estoque":"Esgotado"}}</h3>
             </div>
 
             <div class="buy-product-amout-selector">
+                <p>CEP:
+                    <input type="number" name="cepNumber" maxlength="8" class="cepField" size="1" placeholder="So números">
+                    <p>
+                        {{(product.deliveryTax==0)? "Entrega Gratis":(product.brlConverter(product.deliveryTax))}} no frete para o seu CEP
+                </p>
                 <div>
                     <strong>Quantidade </strong>
                     <select name="buyingProductAmount" id="buyingProductAmount">
-                            <option value="1">1</option>
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
                 </div>
-
+                <p>Comprar como presente?<input type="checkbox" class="giftOrder"></p>
                 <button class="buyButton" (click)="buyProduct()">Comprar</button>
+
             </div>
 
             <div class="buy-product-botton-info">
