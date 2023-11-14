@@ -27,7 +27,6 @@ export class Product {
     brlConverter(valueNumber:number): any {
       let brlItemPrice = valueNumber.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
       let splitedBRLItemPrice = brlItemPrice.split(",");
-      console.log(splitedBRLItemPrice.length);
       if (splitedBRLItemPrice.length == 1 ) {
         brlItemPrice = brlItemPrice+",00";
       }else if(splitedBRLItemPrice[1].length != 2){

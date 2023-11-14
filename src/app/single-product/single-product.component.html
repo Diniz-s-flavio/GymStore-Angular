@@ -1,6 +1,10 @@
 <div class="product-main">
     <div class="product-img">
-       <img class="product-img-field" src={{product.image}} alt={{product.name}}> 
+        <img class="product-img-field" id="image-slider" src="../../assets/img/produtos/halteres1.jpg" alt={{product.name}}>
+        <div class="img-toggle-buttons">
+            <button (click)="nextImg()" >Anterior</button>
+            <button (click)="nextImg()" >Próximo</button>
+        </div>
     </div>
     <div class="product-about">
         <div class="product-about-name">
@@ -34,24 +38,23 @@
             </div>
 
             <div class="buy-product-amout-selector">
-                <p>CEP:
-                    <input type="number" name="cepNumber" maxlength="8" class="cepField" size="1" placeholder="So números">
-                    <p>
-                        {{(product.deliveryTax==0)? "Entrega Gratis":(product.brlConverter(product.deliveryTax))}} no frete para o seu CEP
-                </p>
-                <div>
-                    <strong>Quantidade </strong>
-                    <select name="buyingProductAmount" id="buyingProductAmount">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <p>Comprar como presente?<input type="checkbox" class="giftOrder"></p>
-                <button class="buyButton" (click)="buyProduct()">Comprar</button>
-
+                    <p>CEP:
+                        <input type="number" name="cepNumber" id="cepNumber" maxlength="8" minlength="8" class="cepField" size="1" placeholder="So números" required>
+                        <p>
+                            {{(product.deliveryTax==0)? "Entrega Gratis":(product.brlConverter(product.deliveryTax))}} no frete para o seu CEP
+                    </p>
+                    <div>
+                        <strong>Quantidade </strong>
+                        <select name="buyingProductAmount" id="buyingProductAmount">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <p>Comprar como presente?<input type="checkbox" class="giftOrder"></p>
+                    <button class="buyButton" (click)="buyProduct()">Comprar</button>
             </div>
 
             <div class="buy-product-botton-info">

@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { UserRegisterComponent } from './user-register/user-register.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {MatDividerModule} from '@angular/material/divider';
     NotFoundComponent,
     ProductsComponent,
     SingleProductComponent,
+    UserRegisterComponent,
   ],
   imports: [
     BrowserModule,

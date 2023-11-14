@@ -38,10 +38,29 @@ export class SingleProductComponent implements OnInit{
    }
 
    buyProduct():any{
-    const selectValue = document.getElementById('buyingProductAmount') as HTMLSelectElement
+    const selectValue = document.getElementById('buyingProductAmount') as HTMLSelectElement;
+
+    const cepElement = document.getElementById('cepNumber') as HTMLInputElement;
+    const cepNumbers = parseInt(cepElement.value);
+
+    let cepStringNumbers:string;
+
+    if (isNaN(cepNumbers)){
+      alert('Preencha o CEP!!');
+      return;
+    }else{
+      
+      cepStringNumbers = cepNumbers.toString();
+      if (cepStringNumbers.length!= 8){
+        alert('O CEP deve conter 8 números!!');
+        return;
+      }
+    }
+    const cep = `${cepStringNumbers.substr(0, 5)}-${cepStringNumbers.substr(5, 3)}`;
+
     this.orderItemsAmount = parseInt(selectValue.value);
     let totalOrderItemValue = this.product.price* this.orderItemsAmount;
-    alert("Comprando "+ this.product.name +": "+this.orderItemsAmount+" por R$" + this.product.brlConverter(totalOrderItemValue))
+    alert("Comprando "+ this.product.name +": "+this.orderItemsAmount+" por R$" + this.product.brlConverter(totalOrderItemValue)+" Com "+((this.product.deliveryTax==0)? "entrega gratis":("R$ "+this.product.brlConverter(this.product.deliveryTax)+ "")) +" uma taxa de frete para entregar no CEP: " +cep)
    }
   
    toggleStockStats(): void{
@@ -69,4 +88,31 @@ export class SingleProductComponent implements OnInit{
       }
     } 
   }
+
+  loadedImgOnSlider = document.getElementById('image-slider');
+
+  imgs = [
+    '../../assets/img/produtos/halteres1.jpg',
+    '../../assets/img/produtos/halteres2.png',
+    '../../assets/img/produtos/halteres3.png',
+  ];
+
+  currentPosition = 0;
+
+  showCurrentImg(): void {
+    const imageSlider = document.getElementById('image-slider') as HTMLImageElement;
+    imageSlider.src = this.imgs[this.currentPosition];
+  }
+
+  previousImg(): void {
+    this.currentPosition = (this.currentPosition - 1 + this.imgs.length) % this.imgs.length;
+    this.showCurrentImg();
+  }
+
+  nextImg(): void {
+    this.currentPosition = (this.currentPosition + 1) % this.imgs.length;
+    this.showCurrentImg();
+
+  }
+  
 }
