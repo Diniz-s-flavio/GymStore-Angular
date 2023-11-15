@@ -1,0 +1,94 @@
+label,p{
+    color: #E5E5E5;
+    font-family: var(--font-secundary);
+}
+main{
+    margin-left: 10px;
+}
+main a{
+    text-decoration: none;
+    font-family: var(--font-action);
+    color: #E5E5E5;
+}
+
+/* Cadastro Usuario*/
+.cadastroUsuario fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.campo{
+    margin: 20px;
+    display: flex;
+}
+
+.campo label{
+    background-color: #07d707;
+    color: #000;
+    padding: 10px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    margin-right: 0;
+}
+.campo input{
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    margin-left: 0;
+    font-size: 20px;
+    position: relative;
+    right: 0;
+}
+
+.campo #birthday{
+    font-size: 16px;
+}
+
+.campo #useTerms{
+    background-color: #fff;
+}
+
+.cadastroUsuario button:hover{
+    color: #45454f;
+}
+
+.cadastroUsuario button{
+    border: none;
+    border-radius: 10px;
+    background-color: #07d707;
+    font-family: var(--font-action);
+    font-size: 24px;
+    padding: 5px;
+
+}
+
+.cadastroUsuario button:hover{
+    color: #45454f;
+}
+
+#campoUseTerms{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+    background-color: #fff;
+    padding: 5px;
+    align-content: center;
+    border-radius: 5px;
+
+}
+
+#campoUseTerms label{
+    color: #000;
+    margin: 10px 5px;
+}
+
+.mainDataCadastroUsuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
