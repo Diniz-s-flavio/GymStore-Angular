@@ -92,3 +92,7 @@ main a{
     width: 100%;
     align-items: center;
 }
+
+.cadastroUsuario{
+    overflow: hidden;
+}
