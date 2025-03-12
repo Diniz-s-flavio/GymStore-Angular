@@ -1,11 +1,42 @@
 # GymStoreAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli). And it's a project aboute a prototype website selling gym equipment.
-
 # Starting Objectives
 
-Initially this project will have 3 main home pages, a home page that shows the available products, an order page that brings us a form to register an order, and a page dedicated to the product, which shows the selected product in detail.
+Inicialmente este projeto terá 3 home pages principais, uma home page que mostra os produtos disponíveis, uma página de pedidos que nos traz um formulário para registrar um pedido e uma página dedicada ao produto, que mostra detalhadamente o produto selecionado.
 
-# Project Developer
+# Desenvolvedor do projeto
 
-Hello, I'm Flávio Diniz de Sousa and I will initially develop this project alone for my college in the Web development discipline. And this is the first time I work with Angular, so I hope to learn as much as possible, even though my studies are focused on the back-end.
+Olá, sou Flávio Diniz de Sousa e inicialmente desenvolverei este projeto sozinho para minha faculdade na disciplina de desenvolvimento Web. E esta é a primeira vez que trabalho com Angular, então espero aprender o máximo possível, mesmo que meus estudos sejam focados em back-end.
+
+#### Instruções de Uso do Projeto
+
+#### Para executar o Front-end do GymStore, siga estas etapas:
+
+1. **Instalar Dependências do Projeto Angular:**
+
+   - Certifique-se de que você tem o **Node.js** e **npm** instalados em sua máquina. Para verificar, use os seguintes comandos:
+     ```bash
+     node -v
+     npm -v
+     ```
+
+   - Após isso, vá para o diretório do projeto Angular e instale as dependências necessárias executando o comando abaixo:
+     ```bash
+     npm install
+     ```
+
+2. **Executar o Projeto Angular:**
+
+   - Para rodar o sistema, use o seguinte comando:
+     ```bash
+     ng serve
+     ```
+
+   - Isso iniciará o servidor de desenvolvimento Angular. Você pode acessar o sistema no navegador usando o seguinte endereço:
+     ```
+     http://localhost:4200
+     ```
+
+3. **Componentes Standalone (Angular v14+):**
+
+   - Certifique-se de que cada componente standalone foi gerado corretamente, e que o roteamento está configurado de acordo com as instruções anteriores.
